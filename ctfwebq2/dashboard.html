@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard — AcmeCorp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header><h1>Team Dashboard</h1></header>
+
+    <section class="card">
+      <p id="welcome_msg">Welcome, <strong>guest</strong>.</p>
+      <p>Admin-only memo is not displayed here.</p>
+      <p class="small">Tip: sometimes site resources hold secrets that are not shown directly on the page.</p>
+      <p><a href="index.html">← Back</a></p>
+    </section>
+  </main>
+
+  <script>
+    var c = (document.cookie.match(/(?:^|; )user=([^;]+)/) || [])[1] || 'guest';
+    try { document.getElementById('welcome_msg').querySelector('strong').textContent = decodeURIComponent(c); }
+    catch (e) {}
+  </script>
+</body>
+</html>

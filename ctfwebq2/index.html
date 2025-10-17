@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AcmeCorp — Employee Portal</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>AcmeCorp Employee Portal</h1>
+      <p class="subtle">For staff only — sign in to continue.</p>
+    </header>
+
+    <section class="card">
+      <label for="user">Username</label>
+      <input id="user" placeholder="guest" value="guest">
+      <button id="login">Sign in</button>
+      <p class="note">Signed in as <span id="who">guest</span></p>
+    </section>
+
+    <section class="card">
+      <h2>Dashboard</h2>
+      <p id="welcome">Welcome, <strong>guest</strong>.</p>
+      <p class="hint">If the admin memo is missing, check site resources and attributes.</p>
+      <p class="small">Hint: styles, images, and element attributes sometimes contain useful strings.</p>
+      <p><a href="dashboard.html">Open dashboard →</a></p>
+    </section>
+
+    <footer>
+      <p class="tiny">Contact IT if you need admin access.</p>
+    </footer>
+  </main>
+
+  <div id="surface" data-b64="z1SYoFGa" data-meta="nothing-here"></div>
+  <img src="secret.svg" alt="" aria-hidden="true" style="display:none">
+
+  <script src="script.js"></script>
+</body>
+</html>
